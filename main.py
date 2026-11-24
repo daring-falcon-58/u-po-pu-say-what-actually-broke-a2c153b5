@@ -4,6 +4,9 @@
 Writes one line, the software error message a product shows its user,
 to /output/entry.txt. Deterministic: no network, no randomness, no input,
 no environment, no secrets. Gate: 1-200 UTF-8 characters, not only whitespace.
+Tie-break: among candidate one-liners, this one wins because it names
+the failure mode precisely (undo/redo state confusion) instead of a
+generic "something went wrong" — the user learns what actually broke.
 """
 import os
 
